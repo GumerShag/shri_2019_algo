@@ -1,4 +1,4 @@
-window.primeNumbers = function (number) {
+window.generatePrimeNumbers = function (number) {
     if (number === 1) return;
     let primeNumbersArray = [];
     for (let i = 2; i <= number; i++) {
@@ -11,4 +11,4 @@ window.primeNumbers = function (number) {
     return primeNumbersArray;
 };
 
-primeNumbers(200)
+generatePrimeNumbers(200);
