@@ -25,4 +25,6 @@ window.selectSort = function (array) {
         array.swap(maxElementIndex, array.length - i - 1);
     }
 
+    return array;
+
 };
