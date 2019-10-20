@@ -17,7 +17,9 @@ window.validateBrackets = function (valueToValidate) {
         }
 
     });
-
+    if (bracketsStack.length !== 0) {
+        isValid = false;
+    }
     return isValid;
 
 };
