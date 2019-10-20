@@ -8,7 +8,7 @@ Array.prototype.swap = function(firstIndex, secondIndex) {
 
 window.bubbleSort = function f(unsortedArray) {
     for (let i = 0; i < unsortedArray.length; i++) {
-        for (let k = i; k < unsortedArray.length - i -1; k++) {
+        for (let k = 0; k < unsortedArray.length - i -1; k++) {
             if (unsortedArray[k] > unsortedArray[k + 1]) {
                 unsortedArray.swap(k, k + 1)
             }
@@ -17,4 +17,6 @@ window.bubbleSort = function f(unsortedArray) {
 
     return unsortedArray;
 };
+
+bubbleSort([3, 2, 1, 0])
 
