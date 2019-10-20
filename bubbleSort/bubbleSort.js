@@ -7,7 +7,6 @@ Array.prototype.swap = function(firstIndex, secondIndex) {
 
 
 window.bubbleSort = function f(unsortedArray) {
-    console.log('Works');
     for (let i = 0; i < unsortedArray.length; i++) {
         for (let k = i; k < unsortedArray.length - i -1; k++) {
             if (unsortedArray[k] > unsortedArray[k + 1]) {
